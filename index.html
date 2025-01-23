@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="company.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="company.js"></script>
+</head>
+<body>
+        <div class=" container bg-light d-flex align-items-center justify-content-center p-4 rounded shadow-sm" style=" max-width: 600px;">
+            <form>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Hardware</th>
+                                <td>Company 1</td>
+                                <td>GlobalTech</td>
+                                <td>Company 2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Software</th>
+                                <td>Asal</td>
+                                <td>InfiniteTiers</td>
+                                <td>Exhausted</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Networking</th>
+                                <td>Company 3</td>
+                                <td>Company 4</td>
+                                <td>Company 5</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+                <div class="mb-3">
+                    <label for="typeOfCompany" class="form-label">Insert the name of company you want to add or delete!</label>
+                    <select id="typeOfCompany" class="form-select">
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+                        <option value="networking">Networking</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="nameOfCompany" class="form-control" placeholder="Company Name">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button onclick="myfunction(event)" class="btn btn-primary add-button" >Add</button>
+                    <button onclick="myfunction_2(event)" class="btn btn-danger" id="deleteButton">Delete</button>
+                </div>
+            </form>
+            <button onclick="myfunction(event)" class="btn btn-primary add-button" >Add</button>
+        </div>
+</body>
+</html>

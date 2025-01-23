@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5d8dbea;
+    padding-top: 20px;
+}
+.container {
+    margin: auto; 
+    padding: 20px;  
+    min-height: 400px;
+    border-radius: 20px; 
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+td:hover {
+    background-color: #ebf4fb;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 48%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .bg-light {
+        padding: 20px; 
+    }
+
+    button {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        padding: 8px; 
+    }
+}
